@@ -1,0 +1,32 @@
+#cabecalho {
+    max-width: 560px;
+}
+
+#conteudo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    justify-content: center;
+    place-items: center;
+    gap: 20px;
+}
+
+.postagem {
+    height: 200px;
+    max-width: 350px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.postagem > img {
+    width: 100%;
+    height: 100%;
+}
+
+.postagem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}

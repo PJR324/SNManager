@@ -1,0 +1,55 @@
+body {
+    height: 100dvh;
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: var(--backDark4);
+    color: var(--textDark2);
+}
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--backDark);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--textDark);
+}
+section h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+section p, ul {
+    margin: 10px 0;
+}
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+strong {
+    color:var(--textDark);
+}
+hr {
+    margin: 40px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+#btVoltar {
+    position: fixed;
+    bottom: 9%;
+    right: 3%;
+    display: flex;
+    background-color: var(--back);
+    width: 6rem;
+    height: 3rem;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}

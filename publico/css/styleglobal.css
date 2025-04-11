@@ -1,0 +1,33 @@
+:root{
+    --back: #e8e7e7;
+    --backDark: #ccc;
+    --backDark2: #b5b6b6;
+    --backDark3: #dee4e5;/*dark1*/
+    --backDark4: #333333;
+    --backDark5: #fff8f8;
+    --backDark6: #9cabae;
+    --backDark7: #fff8f8;
+    --textDark: #121212;
+    --textDark2: #121212;
+    --backClear: #121212;
+    --backClear1: #ebddcc;
+    --backClear3: #908c85;
+    --backClear5: #0e0e0e;
+    --backClear6: #717273;
+    --backClear7: #666463;
+    --textClear: #b34436;
+    --textClear2: #e8e7e7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100svh;
+}
+
+button {
+    cursor: pointer;
+}

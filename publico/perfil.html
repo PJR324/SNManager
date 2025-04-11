@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/stylePerfil.css">
+    <link rel="stylesheet" type="text/css" href="css/styleglobal.css">
+    <link rel="icon" href="img/icones/mascote_dark.png">
+    <title>Perfil • SNManager</title>
+</head>
+<body>
+    <article id="box">
+        <div id="box-filho">
+            <header>
+                <h1 id="contaSNM"></h1> <!--Serve para colocar o @ do perfil da pessoa-->
+                <div id="creditosBox" onclick="abrirModal()">
+                    <img id="img" src="img/icones/sair.png" alt="logo">
+                </div>
+            </header>
+            <div id="dados">
+                <div class="dropdown">
+                    <button class="dropbtn" id="Bluesky" onclick="toggleDropdown(this.id)">Bluesky</button>
+                    <ul class="dropdown-content" id="dropdownBluesky">
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" id="Twitch" onclick="toggleDropdown(this.id)">Twich</button>
+                    <ul class="dropdown-content" id="dropdownTwitch">
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" id="Youtube" onclick="toggleDropdown(this.id)">Youtube</button>
+                    <ul class="dropdown-content" id="dropdownYoutube">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- modal de sair -->
+    <div id="modal">
+        <div id="modalContent">
+          <p>
+            Você deseja apenas sair ou sair e excluir sua conta?  
+          </p>
+          <div id="botaoBox">
+            <button class="botao" onclick="sair()">
+                Sair
+            </button>
+            <button class="botao" onclick="sairExcluir()">
+                Sair e excluir conta
+            </button>
+          </div>
+        </div>
+    </div>
+    <!-- modal da lixeira -->
+    <div id="modalLixeira">
+        <div id="modalContent">
+          <p>
+            Você deseja excluir essa conta?
+          </p>
+            <button class="botao" id="botaoExcluir">
+                Sim
+            </button>
+        </div>
+    </div>
+    <script src="js/modalPerfil.js"></script>
+</body>
+<script src="js/alterarTema.js"></script>
+</html>

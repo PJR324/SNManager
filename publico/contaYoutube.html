@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script>
+        if (!localStorage.getItem("selectedAccount")) {
+            window.location.href = 'menu.html';
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta • Youtube</title>
+    <link rel="stylesheet" type="text/css" href="css/styleglobal.css">
+    <link rel="stylesheet" href="css/styleConta.css">
+    <link rel="stylesheet" href="css/styleYoutube.css">
+</head>
+<body>
+    <div id="mainStyle">
+        <main>
+            <header id="cabecalhoWrapper">
+                <article id="cabecalho">
+                    <div id="fotoPerfil"></div>
+                    <div id="secaoNome">
+                        <span id="nomeUsuario"></span>
+                    </div>
+                </article>
+                <div id="iconePlataforma">
+                    <img src="img/icones/redes/Youtube_logo.png" alt="Youtube">
+                </div>
+            </header>
+    
+            <div id="barraNavegacao">
+                <div class="itemNavegacao">Postagens</div>
+                <div class="itemNavegacao">Dados Gerais</div>
+                <div class="itemNavegacao" onclick="window.history.back()">Voltar</div>
+            </div>
+    
+            <div id="conteudo">
+                
+            </div>
+        </main>
+    </div>
+    <div id="loaderBox" style="display: none;">
+        <div id="loader"></div>
+    </div>
+</body>
+<script src="js/contaYoutube.js"></script>
+<script src="js/alterarTema.js"></script>
+</html>

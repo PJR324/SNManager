@@ -1,0 +1,68 @@
+#box{
+    width: 100%;
+    height: 100%;
+    background-color: var(--backDark);
+    display: flex;
+    justify-content: center;
+}
+#box-filho{
+    background-color: var(--backDark3);
+    width: 95%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#explicacao{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 5px;
+}
+#explicacao > img{
+    width: 90%;
+}
+.exemploBarra {
+    max-width: 500px;
+}
+#explicacao > #img1{
+    max-width: 100px;
+}
+#explicacao > #img2{
+    max-width: 700px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+#explicacao > p{
+    font-size: 1.5rem;
+}
+#explicacao > h3{
+    font-size: 1.3rem;
+    margin: 20px;
+    font-style: italic;
+}
+header{
+    color: var(--textDark);
+    font-size: 4rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    gap: 4%;
+}
+#btVoltar {
+    position: fixed;
+    bottom: 9%;
+    right: 3%;
+    display: flex;
+    background-color: var(--back);
+    width: 6rem;
+    height: 3rem;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}

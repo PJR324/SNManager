@@ -1,0 +1,66 @@
+#bannerYoutube {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    background-color: var(--backDark3);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#userName {
+    text-align: center;
+    font-size: 2rem;
+    margin: 5px 0;
+}
+#canalInfo {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+}
+#youtubeDescricao {
+    width: 90%;
+    justify-self: center;
+    font-size: 1.2rem;
+    margin: 15px 0;
+    padding: 0 5px;
+    border-radius: 5px;
+    background-color: var(--backClear6);
+    color: var(--textClear2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);;
+}
+#tituloPlaylists {
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px 0;
+}
+#playlistsBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: flex-start;
+    place-items: center;
+    gap: 20px;
+}
+.playlistBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 440px;
+    width: 80%;
+    padding: 0 5px;
+    height: 100%;
+    justify-content: space-between;
+}
+.playlistBox > img {
+    width: 100%;
+}
+#youtubePlaylistTitulo {
+    font-size: 1.4rem;
+    text-align: center;
+}
+#youtubePlaylistDescricao {
+    font-size: 1.2rem;
+}

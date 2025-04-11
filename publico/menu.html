@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNManager</title>
+  <link rel="stylesheet" href="css/styleglobal.css">
+  <link rel="stylesheet" type="text/css" href="css/styleMenu.css">
+  <link rel="stylesheet" href="css/styleMenuYoutube.css">
+  <link rel="icon" type="image/png" href="img/icones/mascote_dark.png">
+</head>
+
+<body>
+  <header id="headerTopo">
+    <div id="logoBox">
+      <img src="img/icones/mascote_dark.png" alt="Logo" id="logo">
+      <div id="logoNome">SNManager</div>
+    </div>
+    <div id="redeBox">
+      <span id="pessoaNome">Selecione uma pessoa</span>
+      <img id="redeLogo" src="img/icones/selecione.png">
+    </div>
+    <div id="settings">
+      <label for="toggleMenu" id="settingsBox">
+        <img src="img/icones/engrenagem.png" alt="Configurações" id="settingsIcon">
+        <img src="img/icones/sanduiche.png" alt="SanduícheMenu" id="sanduicheIcon">
+      </label>
+      <input type="checkbox" id="toggleMenu">
+      <nav id="dropdownMenu">
+        <div id="botaoBox"></div>
+        <div id="settingsList">
+          <a href="perfil.html" id="perfilLink">Perfil</a>
+          <hr>
+          <a href="#" id="menuTemas">Alterar Tema</a>
+          <hr>
+          <a href="comoUsar.html">Como usar</a>
+          <hr>
+          <a href="politicas.html">Politica de Privacidade</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div id="container">
+    <aside id="sidebar">
+      <section id="contasFeed">
+        <div id="pesquisarBox">
+          <button id="pesquisarBtn" onclick="pesquisaPublica()">Pesquisar</button>
+        </div>
+        <hr>
+        <!-- twitch submenu -->
+        <article class="redeSection" aria-labelledby="blueskyCheckbox">
+          <input type="checkbox" id="blueskyCheckbox">
+          <label for="blueskyCheckbox" class="redeItem">
+            <span>Bluesky</span>
+            <div id="arrow"></div>
+          </label>
+          <section class="contasMenu">
+            <button>Adicionar Conta</button>
+          </section>
+        </article>
+        <hr>
+
+        <!-- twitch submenu -->
+        <article class="redeSection" aria-labelledby="twitchCheckbox">
+          <input type="checkbox" id="twitchCheckbox">
+          <label for="twitchCheckbox" class="redeItem">
+            <span>Twitch</span>
+            <div id="arrow"></div>
+          </label>
+          <section class="contasMenu">
+            <button>Adicionar Conta</button>
+          </section>
+        </article>
+        <hr>
+
+        <!-- YouTube submenu -->
+        <article class="redeSection" aria-labelledby="youtubeCheckbox">
+          <input type="checkbox" id="youtubeCheckbox">
+          <label for="youtubeCheckbox" class="redeItem">
+            <span>YouTube</span>
+            <div id="arrow"></div>
+          </label>
+          <section class="contasMenu">
+            <button onclick="window.location.href='/youtube/adicionarConta'">Adicionar Conta</button>
+          </section>
+        </article>
+        <hr>
+      </section>
+
+      <footer id="creditosBox" onclick="abrirModal()">
+        <img src="img/etec.png" alt="Logo da ETEC">
+      </footer>
+    </aside>
+    <div id="mainStyle">
+      <main id="main">
+        <form id="pesquisaRow">
+          <button type="submit">
+            <img src="img/icones/lupa.png" alt="Lupa" id="imgLupa">
+          </button>
+          <input type="text" id="inUser" placeholder="Bluesky">
+          <div id="dropdown">
+            <div id="imagemSelecionadaBox" onclick="ativarDropdown()">
+                <img id="imagemSelecionada" src="img/icones/redes/Bluesky_logo.png" alt="Seleção">
+            </div>
+            <div id="dropdownContent">
+                <img id="option_Bluesky" src="img/icones/redes/Bluesky_logo.png" alt="Bluesky" onclick="selectImage(this.id)">
+                <img id="option_Twitch" src="img/icones/redes/Twitch_logo.png" alt="Twitch" onclick="selectImage(this.id)">
+                <img id="option_Youtube" src="img/icones/redes/Youtube_logo.png" alt="Youtube" onclick="selectImage(this.id)">
+            </div>
+        </div>
+        </form>
+        <div id="loader" style="display: none;"></div>
+        <div id="mainContent"></div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Modal dos participantes -->
+  <div id="modal">
+    <div id="modalContent">
+      <header id="headerModal">
+        <img src="img/icones/mascote_dark.png" alt="Logo" id="logoModal">
+        <span>SNManager</span>
+      </header>
+      <br>
+      <h2>Produzido carinhosamente por</h2>
+      <br>
+      <ul id="participantes">
+        <li>Brenda Lira Rodrigues</li>
+        <li>Eduardo dos Santos Matos</li>
+        <li>Jeniffer Oliveira da Silva</li>
+        <li>Pedro Henrique de Jesus </li>
+        <li>Pietro de Cesar Coimbra</li>
+      </ul>
+      <br>
+      <footer>
+        <img src="img/etec.png" alt="Logo da ETEC" id="etecModal">
+      </footer>
+    </div>
+  </div>
+</body>
+<script src="js/menu.js"></script>
+<script src="js/buscarDados.js"></script>
+<script src="js/alterarTema.js"></script>
+<script src="js/mostrarRedes.js"></script>
+</html>

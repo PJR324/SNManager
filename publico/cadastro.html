@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styleCadastro.css">
+    <link rel="stylesheet" type="text/css" href="css/styleglobal.css">
+    <link rel="icon" type="icon" href="img/icones/mascote_dark.png">
+    <title>Cadastro • SNManager</title>
+</head>
+<body>
+    <div id="img-style">
+        <figure>
+            <img class="img2" src="img/icones/mascote_dark.png" alt="robozinho">
+        </figure>
+    </div>
+    
+    <div class="paiCadastro">
+        <form id="form-cadastro">
+            <div class="boxInput">
+                <input type="email" placeholder="Email" id="inEmail" required>
+                <input type="password" placeholder="Senha" id="inSenha" required>
+                <input type="password" placeholder="Confirmar Senha" id="inConfirmSenha" required>
+                <p id="alertSenha"></p>
+            </div>
+            <p>
+                Ao se cadastrar, você concorda com a nossa <a href="politicas.html">Politica de Privacidade e Termos de uso</a>
+            </p>
+            <p>Já possui uma conta?<a href="entrar.html"> Entrar</a></p>
+            <div class="buttonC">
+                <button type="button" onclick="window.history.back()" id="buttonA">Voltar</button>
+                <button type="submit" id="botaoCadastro">Cadastrar-se</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="js/cadastro.js"></script>
+<script src="js/alterarTema.js"></script>
+</html>

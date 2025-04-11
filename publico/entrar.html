@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styleEntrar.css">
+    <link rel="stylesheet" type="text/css" href="css/styleglobal.css">
+    <link rel="icon" type="icon" href="img/icones/mascote_dark.png">
+    <title>Entrar • SNManager</title>
+</head>
+<body>
+    <header id="img-style">
+        <figure>
+            <img class="img2" src="img/icones/mascote_dark.png" alt="robozinho">
+        </figure>
+    </header>
+    
+    <div class="paiCadastro">
+        <form id="form-login">
+            <div class="boxInput">
+                <input type="email" placeholder="Email" id="inEmail" required>
+
+                <input type="password" placeholder="Senha" id="inSenha" required>
+            </div>
+            <p>Não possui conta? <a href="cadastro.html">Cadastre-se</a></p>
+            <div class="buttonC">
+                <button type="button" onclick="window.history.back()" id="buttonA">Voltar</button>
+                <button type="submit" id="btEntrar">Entrar</button>
+            </div>
+        </form> 
+    </div>   
+</body>
+<script src="js/entrar.js"></script>
+<script src="js/alterarTema.js"></script>
+</html>
