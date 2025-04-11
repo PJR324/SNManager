@@ -1,7 +1,6 @@
 # SNManager
 
 [![Node.js](https://img.shields.io/badge/Node.js-v20.18.0-brightgreen?logo=node.js)](https://nodejs.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Status](https://img.shields.io/badge/status-em%20desenvolvimento-blue)]
 
 > Um gerenciador de redes sociais que reúne **Bluesky**, **YouTube** e **Twitch** em um único sistema.  
