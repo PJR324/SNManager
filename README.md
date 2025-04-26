@@ -69,7 +69,7 @@ Perfect for content creators and digital enthusiasts who want to easily monitor 
 1. **Clone o repositório | Clone the repository:**
 
 ```bash
-git clone https://github.com/seu-usuario/snmanager.git
+git clone https://github.com/PedroDJesus/snmanager.git
 ```
 
 2. **Instale as dependências | Install the dependencies:**
